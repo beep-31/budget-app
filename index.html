@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="app-title">
+        <h2><span class="orange">budget_</span>app</h2>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="main-inner">
+                <div class="user-data">
+                    <div class="title"><h3>Daily budget calculation</h3></div>
+                    <div id="requiered-expenses">
+                        <div class="info"><p>Type your required expenses</p></div>
+                        <div class="req-expense hide">
+                            <input type="text" class="requiered-expense" placeholder="Name">
+                            <input type="text" class="requiered-expense" placeholder="Price">
+                        </div>
+                        <div class="req-expense">
+                            <input type="text" class="requiered-expense" placeholder="Name">
+                            <input type="text" class="requiered-expense" placeholder="Price">
+                        </div>
+                        <div class="req-expense">
+                            <input type="text" placeholder="Name">
+                            <input type="text" class="required-expense" placeholder="Price">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="delete" id="req-exp-delete">Delete</button>
+                        <button class="add" id="req-exp-add">Add</button>
+                    </div>
+                    <div class="optional-expenses">
+                        <div class="info"><p>Type your optional expenses</p></div>
+                        <div class="opt-expense">
+                            <input type="text" class="optional-expense" placeholder="Name">
+                            <input type="text" class="optional-expense" placeholder="Price">
+                        </div>
+                        <div class="btns">
+                            <button class="delete">Delete</button>
+                            <button class="add">Add</button>
+                        </div>
+                    </div>
+
+                    <div class="incomes">
+                        <div class="info"><p>Type your incomes</p></div>
+                        <div class="income">
+                            <input type="text" class="profit" placeholder="Description">
+                            <input type="text" class="profit" placeholder="Amount">
+                        </div>
+                        <div class="btns">
+                            <button class="delete">Delete</button>
+                            <button class="add">Add</button>
+                        </div>
+                    </div>
+                    <div class="savings">
+                        <div class="info"><p>Do you have any savings?</p></div>
+                        <div class="checksavings"><input type="checkbox" id="savings"></div>
+                    </div>
+                    <div class="savings-data">
+                        <input type="text" class="profit" placeholder="Sum">
+                        <input type="text" class="profit" placeholder="Percentage">
+                    </div>
+                    <div class="count-button">
+                        <button class="count-btn">Let's Go!</button>
+                    </div>
+                </div>
+                <div class="results">
+                    <div class="title"><h3>Results</h3></div>
+                    <div class="result-table">
+                        <div class="block">
+                            <div class="budget">Income: </div>
+                            <div class="budget-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="daybudget">Daily budget: </div>
+                            <div class="daybudget-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="required-expenses">Requiered expenses: </div>
+                            <div class="requiered-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="optional-expenses">Optional expenses: </div>
+                            <div class="optional-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="total-expenses">Expenses sum: </div>
+                            <div class="total-expenses-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="total-income">Income: </div>
+                            <div class="total-income-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="month-savings">Month savings: </div>
+                            <div class="month-savings-value"></div>
+                        </div>
+                        <div class="block">
+                            <div class="year-savings">Year savings: </div>
+                            <div class="year-savings-value"></div>
+                        </div>
+                    </div>
+                    <div class="time-data">
+                        <div class="year">
+                            Year:
+                            <input type="text" class="year-value" readonly>
+                        </div>
+                        <div class="month">
+                            Month:
+                            <input type="text" class="month-value" readonly>
+                        </div>
+                        <div class="day">
+                            Day: 
+                            <input type="text" class="day-value" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

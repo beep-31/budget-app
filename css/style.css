@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap');
+
+.container{
+    width: 100%;
+    max-width: 1590px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, button, p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.req-expense.hide{
+    display: none;
+}
+
+button{
+    /* display: inline-block; */
+}
+
+input{
+    border: none;
+    box-shadow: 0 2.5px 10px 0 rgba(1,0,42,.1);
+    font-family: 'Ubuntu', sans-serif;
+    color: #3a3331;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.add svg{
+    width: 20px;
+    width: 20px;
+}
+
+.info p{
+    text-align: center;
+}
+
+input::placeholder{
+    font-family: 'Ubuntu';
+    opacity: 0.7;
+}
+
+span.orange{
+    color: #e84118;
+}
+
+.main{
+    background-color: #f5f6fa;
+    padding: 10px 0px;
+}
+
+.main-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.app-title{
+    text-align: center;
+    border-bottom: 1px solid #dcdde1;
+}
+
+.user-data .title{
+    text-align: center;
+}
+
+.req-expense, 
+.opt-expense,
+.income,
+.savings-data{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.req-expense input,
+.opt-expense input,
+.income input,
+.savings-data input{
+    width: 250px;
+    height: 30px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.results .title{
+    text-align: center;
+}
+
+button.delete,
+button.add{
+    background-color: #9c88ff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 300;
+    display: block;
+    padding: 9px 15px;
+    margin: 0px 5px;
+    transition: background-color linear 0.2s;
+    cursor: pointer;
+}
+
+button.delete:hover,
+button.add:hover{
+    background-color: #836bf8;
+}
+
+.savings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.savings-data{
+    display: none;
+    
+}
+
+.count-button{
+    text-align: center;
+}
+
+.count-btn{
+    border: none;
+    font-size: 16px;
+    background-color: #273c75;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.count-btn:hover{
+    background-color: #2b4a9e;
+}
+
+
+.result-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0px 1.5px 20px 0 rgba(1, 0, 42, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.block{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+
+.time-data{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.time-data input{
+    box-shadow: 0 2.5px 10px 0 rgba(1,0,42,.1);
+    width: 80px;
+    height: 30px;
+}
+
+.time-data  div{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+
