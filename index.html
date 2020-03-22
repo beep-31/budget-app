@@ -35,28 +35,36 @@
                         <button class="delete" id="req-exp-delete">Delete</button>
                         <button class="add" id="req-exp-add">Add</button>
                     </div>
-                    <div class="optional-expenses">
+                    <div class="optional-expenses" id="optional-expenses">
                         <div class="info"><p>Type your optional expenses</p></div>
+                        <div class="opt-expense hide">
+                            <input type="text" class="optional-expense" placeholder="Name">
+                            <input type="text" class="optional-expense" placeholder="Price">
+                        </div>
                         <div class="opt-expense">
                             <input type="text" class="optional-expense" placeholder="Name">
                             <input type="text" class="optional-expense" placeholder="Price">
                         </div>
-                        <div class="btns">
-                            <button class="delete">Delete</button>
-                            <button class="add">Add</button>
-                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="delete" id="opt-exp-del">Delete</button>
+                        <button class="add" id="opt-exp-add">Add</button>
                     </div>
 
-                    <div class="incomes">
+                    <div class="incomes" id="profits">
                         <div class="info"><p>Type your incomes</p></div>
+                        <div class="income hide">
+                            <input type="text" class="profit" placeholder="Description">
+                            <input type="text" class="profit" placeholder="Amount">
+                        </div>
                         <div class="income">
                             <input type="text" class="profit" placeholder="Description">
                             <input type="text" class="profit" placeholder="Amount">
                         </div>
-                        <div class="btns">
-                            <button class="delete">Delete</button>
-                            <button class="add">Add</button>
-                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="delete" id="profit-del">Delete</button>
+                        <button class="add" id="profit-add">Add</button>
                     </div>
                     <div class="savings">
                         <div class="info"><p>Do you have any savings?</p></div>

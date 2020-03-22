@@ -15,8 +15,12 @@ h1, h2, h3, h4, h5, h6, button, p{
     display: none;
 }
 
-button{
-    /* display: inline-block; */
+.opt-expense.hide{
+    display: none;
+}
+
+.income.hide{
+    display: none;
 }
 
 input{
