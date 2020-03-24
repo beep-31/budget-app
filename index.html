@@ -20,15 +20,15 @@
                         <div class="info"><p>Type your required expenses</p></div>
                         <div class="req-expense hide">
                             <input type="text" class="requiered-expense" placeholder="Name">
-                            <input type="text" class="requiered-expense" placeholder="Price">
+                            <input type="text" class="requiered-expense-value" placeholder="Price">
                         </div>
                         <div class="req-expense">
                             <input type="text" class="requiered-expense" placeholder="Name">
-                            <input type="text" class="requiered-expense" placeholder="Price">
+                            <input type="text" class="requiered-expense-value" placeholder="Price">
                         </div>
                         <div class="req-expense">
-                            <input type="text" placeholder="Name">
-                            <input type="text" class="required-expense" placeholder="Price">
+                            <input type="text" class="requiered-expense" placeholder="Name">
+                            <input type="text" class="requiered-expense-value" placeholder="Price">
                         </div>
                     </div>
                     <div class="btns">
@@ -39,11 +39,11 @@
                         <div class="info"><p>Type your optional expenses</p></div>
                         <div class="opt-expense hide">
                             <input type="text" class="optional-expense" placeholder="Name">
-                            <input type="text" class="optional-expense" placeholder="Price">
+                            <input type="text" class="optional-expense-value" placeholder="Price">
                         </div>
                         <div class="opt-expense">
                             <input type="text" class="optional-expense" placeholder="Name">
-                            <input type="text" class="optional-expense" placeholder="Price">
+                            <input type="text" class="optional-expense-value" placeholder="Price">
                         </div>
                     </div>
                     <div class="btns">
@@ -55,11 +55,11 @@
                         <div class="info"><p>Type your incomes</p></div>
                         <div class="income hide">
                             <input type="text" class="profit" placeholder="Description">
-                            <input type="text" class="profit" placeholder="Amount">
+                            <input type="text" class="profit_value" placeholder="Amount">
                         </div>
                         <div class="income">
                             <input type="text" class="profit" placeholder="Description">
-                            <input type="text" class="profit" placeholder="Amount">
+                            <input type="text" class="profit_value" placeholder="Amount">
                         </div>
                     </div>
                     <div class="btns">
@@ -67,15 +67,14 @@
                         <button class="add" id="profit-add">Add</button>
                     </div>
                     <div class="savings">
-                        <div class="info"><p>Do you have any savings?</p></div>
-                        <div class="checksavings"><input type="checkbox" id="savings"></div>
+                        <div class="info"><p>Do you want to save some money?</p></div>
+                        <div class="checksavings"><input type="checkbox" id="checkbox-savings"></div>
                     </div>
-                    <div class="savings-data">
-                        <input type="text" class="profit" placeholder="Sum">
-                        <input type="text" class="profit" placeholder="Percentage">
+                    <div class="savings-data" id="savings">
+                        <input type="text" class="saving" placeholder="How much?" id="save">
                     </div>
                     <div class="count-button">
-                        <button class="count-btn">Let's Go!</button>
+                        <button class="count-btn" id="start">Let's Go!</button>
                     </div>
                 </div>
                 <div class="results">
@@ -83,28 +82,28 @@
                     <div class="result-table">
                         <div class="block">
                             <div class="budget">Income: </div>
-                            <div class="budget-value"></div>
-                        </div>
-                        <div class="block">
-                            <div class="daybudget">Daily budget: </div>
-                            <div class="daybudget-value"></div>
+                            <div class="budget value"></div>
                         </div>
                         <div class="block">
                             <div class="required-expenses">Requiered expenses: </div>
-                            <div class="requiered-value"></div>
+                            <div class="requiered value"></div>
                         </div>
                         <div class="block">
                             <div class="optional-expenses">Optional expenses: </div>
-                            <div class="optional-value"></div>
+                            <div class="optional value"></div>
                         </div>
                         <div class="block">
                             <div class="total-expenses">Expenses sum: </div>
-                            <div class="total-expenses-value"></div>
+                            <div class="total-expenses-value value"></div>
                         </div>
                         <div class="block">
+                            <div class="daybudget">Daily budget: </div>
+                            <div class="daybudget value"></div>
+                        </div>
+                        <!-- <div class="block">
                             <div class="total-income">Income: </div>
                             <div class="total-income-value"></div>
-                        </div>
+                        </div> -->
                         <div class="block">
                             <div class="month-savings">Month savings: </div>
                             <div class="month-savings-value"></div>

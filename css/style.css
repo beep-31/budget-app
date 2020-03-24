@@ -52,6 +52,10 @@ span.orange{
     color: #e84118;
 }
 
+span.red{
+    color: red;
+}
+
 .main{
     background-color: #f5f6fa;
     padding: 10px 0px;
@@ -91,6 +95,10 @@ span.orange{
     padding: 0px 5px;
 }
 
+.savings-data input{
+    margin-bottom: 20px;
+}
+
 .btns{
     display: flex;
     flex-direction: row;
@@ -110,10 +118,17 @@ button.add{
     font-size: 12px;
     font-weight: 300;
     display: block;
-    padding: 9px 15px;
     margin: 0px 5px;
     transition: background-color linear 0.2s;
     cursor: pointer;
+}
+
+button.delete{
+    padding: 9px 15px;
+}
+
+button.add{
+    padding: 9px 21px;
 }
 
 button.delete:hover,
@@ -130,7 +145,7 @@ button.add:hover{
 
 .savings-data{
     display: none;
-    
+    justify-content: center;    
 }
 
 .count-button{
@@ -192,6 +207,10 @@ button.add:hover{
 .time-data  div{
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+.value{
+    margin-left: 10px;
 }
 
 
